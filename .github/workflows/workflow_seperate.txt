@@ -6,7 +6,7 @@ on:
 
 jobs:
   test-py313:
-    name: Python 3.13
+    name: 3.13
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,7 +17,7 @@ jobs:
           dnf_install: poetry
 
   test-py312:
-    name: Python 3.12
+    name: 3.12
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
