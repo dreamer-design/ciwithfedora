@@ -1,0 +1,20 @@
+name: Python Tests
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  tox_test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: [py313, py312]
+    name: Python ${{ matrix.python }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tox
+        uses: fedora-python/tox-github-action@main
+        with:
+          tox_env: ${{ matrix.python }}
+          dnf_install: poetry

@@ -1,0 +1,28 @@
+name: Python Tests
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test-py313:
+    name: Python 3.13
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tox for py313
+        uses: fedora-python/tox-github-action@main
+        with:
+          tox_env: py313
+          dnf_install: poetry
+
+  test-py312:
+    name: Python 3.12
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tox for py312
+        uses: fedora-python/tox-github-action@main
+        with:
+          tox_env: py312
+          dnf_install: poetry
