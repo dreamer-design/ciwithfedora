@@ -7,7 +7,7 @@ sample ci pipeline from fedora magazine
 
 ## Git commands  
 ### Push to remote  
-git status                    which files are modified  
+git status                    \t\t\twhich files are modified  
 git add .                     stage all files, snapshot..changes need re adding  
 git checkout main             cd to branch  
 git commit -m "Description"   A commit is a change to files on a branch  
