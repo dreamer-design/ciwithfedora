@@ -1,4 +1,4 @@
-name: py3.12, py.3.13
+name: 3.12 3.13
 
 on:
   push:
