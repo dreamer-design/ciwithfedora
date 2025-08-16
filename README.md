@@ -1,5 +1,9 @@
 ---
-![Python Tests](https://github.com/dreamer-design/ciwithfedora/actions/workflows/workflow.yaml/badge.svg)  
+![Tox all Tests](https://github.com/dreamer-design/ciwithfedora/actions/workflows/workflow.yaml/badge.svg)  
+![Python 3.12](https://github.com/dreamer-design/ciwithfedora/actions/workflows/workflow_matrix.yaml/badge.svg?branch=main&job=test-py312)  
+![Python 3.13](https://github.com/dreamer-design/ciwithfedora/actions/workflows/workflow_matrix.yaml/badge.svg?branch=main&job=test-py313)  
+![Python matrix 3.12](https://github.com/dreamer-design/ciwithfedora/actions/workflows/workflow.yaml/badge.svg?branch=main&job=Python%203.12)  
+![Python matrix 3.13](https://github.com/dreamer-design/ciwithfedora/actions/workflows/workflow.yaml/badge.svg?branch=main&job=Python%203.13)  
 ***
 
 sample ci pipeline from fedora magazine  
